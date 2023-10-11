@@ -34,6 +34,7 @@
             this.txtSifre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnGiris = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -89,12 +90,22 @@
             this.btnGiris.UseVisualStyleBackColor = true;
             this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 163);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "admin43,1234";
+            // 
             // FrmGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(353, 188);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnGiris);
             this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.label2);
@@ -116,5 +127,6 @@
         private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnGiris;
+        private System.Windows.Forms.Label label4;
     }
 }

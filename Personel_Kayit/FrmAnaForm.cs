@@ -31,6 +31,7 @@ namespace Personel_Kayit
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             txtAd.Focus();
+            this.tbl_PersonelTableAdapter.Fill(this.personelVeriTabaniDataSet.Tbl_Personel);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -55,6 +56,7 @@ namespace Personel_Kayit
             komut.Parameters.AddWithValue("@p6", label8.Text);
             komut.ExecuteNonQuery();
             baglanti.Close();
+            Temizle();
             MessageBox.Show("Personel Eklendi");
         }
 
@@ -110,6 +112,7 @@ namespace Personel_Kayit
             komutSil.Parameters.AddWithValue("@k1", txtID.Text);
             komutSil.ExecuteNonQuery();
             baglanti.Close();
+            Temizle();
             MessageBox.Show("Kayıt Silindi!");
         }
 
@@ -126,6 +129,7 @@ namespace Personel_Kayit
             komutGuncelle.Parameters.AddWithValue("@a7", txtID.Text);
             komutGuncelle.ExecuteNonQuery();
             baglanti.Close();
+            Temizle();
             MessageBox.Show("Personel Bilgisi Güncellendi!");
         }
 
