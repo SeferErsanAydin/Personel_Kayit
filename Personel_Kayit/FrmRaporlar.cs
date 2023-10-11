@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Personel_Kayit
 {
-    public partial class Form1 : Form
+    public partial class FrmRaporlar : Form
     {
-        public Form1()
+        public FrmRaporlar()
         {
             InitializeComponent();
         }
